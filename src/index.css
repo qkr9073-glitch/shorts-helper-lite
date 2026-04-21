@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #f5f6fa;
+  color: #1f2540;
+  font-family: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #f0f2f8; }
+::-webkit-scrollbar-thumb { background: #d0d5e0; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #c8860a; }
+
+input, select, textarea, button { font-family: inherit; font-size: inherit; color: inherit; }
+input, select, textarea { background: #ffffff; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #c8860a; outline-offset: 1px; }
+
+@layer components {
+  .input {
+    @apply px-3.5 py-2.5 bg-white border border-borderc-base rounded-2xl text-[15px] w-full transition text-ink;
+  }
+  .input:hover { border-color: rgba(200, 134, 10, 0.33); }
+  .btn-sm {
+    @apply px-3.5 py-2 bg-white border border-borderc-base rounded-2xl hover:border-gold hover:text-gold text-[14px] transition text-ink;
+  }
+  .btn-primary {
+    @apply px-5 py-3 bg-gold hover:bg-gold-bright text-white rounded-2xl font-semibold text-[15px] transition disabled:opacity-50 shadow-card;
+  }
+  .card {
+    @apply bg-white border border-borderc-base rounded-3xl p-6 shadow-card;
+  }
+}
