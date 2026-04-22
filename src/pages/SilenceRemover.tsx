@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import { removeSilence, type OutputFormat } from "../lib/silenceRemover";
+import MobileNotice from "../components/MobileNotice";
 
 type Item = {
   id: string;
@@ -129,18 +130,19 @@ export default function SilenceRemover() {
   }
 
   return (
-    <div className="p-8 max-w-5xl">
+    <div className="p-4 sm:p-8 max-w-5xl mx-auto">
+      <MobileNotice tool="무음 제거" />
       <div className="flex items-center gap-3 mb-1">
         <span className="text-3xl">🔇</span>
         <h1 className="text-2xl font-bold text-ink">무음 제거기</h1>
       </div>
-      <p className="text-ink-muted mb-3">오디오 파일(mp3 / wav)에서 무음 구간을 자동으로 잘라냅니다. 파일은 브라우저에서만 처리되며 서버로 올라가지 않아요.</p>
+      <p className="text-ink-muted mb-3 text-[14.5px] sm:text-base">오디오 파일(mp3 / wav)에서 무음 구간을 자동으로 잘라냅니다. 파일은 브라우저에서만 처리되며 서버로 올라가지 않아요.</p>
       <div className="mb-6 text-xs bg-bg-tip border border-borderc-base text-gold-tip rounded-xl px-3 py-2 inline-block">
         ⚠️ 쇼츠 대본 편집용 — 파일당 최대 <b>{MAX_DURATION_SEC/60}분</b> · <b>{MAX_SIZE_MB}MB</b>까지 업로드 가능합니다.
       </div>
       {warn && <div className="mb-4 text-xs text-red-600 bg-red-50 border border-red-200 rounded-xl px-3 py-2">{warn}</div>}
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
         <div className="bg-white rounded-2xl shadow-card p-5">
           <div className="text-sm font-semibold text-ink mb-3">파일 목록 <span className="text-ink-soft font-normal">(드래그 앤 드롭 가능)</span></div>
           <div

@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import JSZip from "jszip";
+import MobileNotice from "../components/MobileNotice";
 import {
   decodeAudio,
   loadWhisper,
@@ -226,12 +227,13 @@ export default function Subtitle() {
   }
 
   return (
-    <div className="p-8 max-w-5xl">
+    <div className="p-4 sm:p-8 max-w-5xl mx-auto">
+      <MobileNotice tool="대본 추출" />
       <div className="flex items-center gap-3 mb-1">
         <span className="text-3xl">📝</span>
         <h1 className="text-2xl font-bold text-ink">자막 추출기</h1>
       </div>
-      <p className="text-ink-muted mb-3">
+      <p className="text-ink-muted mb-3 text-[14.5px] sm:text-base">
         영상·오디오 파일에서 자막(SRT/VTT/TXT)을 자동 추출합니다. OpenAI Whisper 모델이 <b>내 브라우저 안에서 직접</b> 실행돼요 — 파일은 서버로 올라가지 않아요.
       </p>
       <div className="mb-6 text-xs bg-bg-tip border border-borderc-base text-gold-tip rounded-xl px-3 py-2 inline-block">
@@ -258,7 +260,7 @@ export default function Subtitle() {
         </div>
       )}
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
         <div className="bg-white rounded-2xl shadow-card p-5">
           <div className="text-sm font-semibold text-ink mb-3">파일 목록 <span className="text-ink-soft font-normal">(드래그 앤 드롭 가능)</span></div>
           <div
