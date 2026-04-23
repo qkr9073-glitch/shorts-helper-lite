@@ -60,7 +60,7 @@ export default function Layout() {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#03C75A] hover:bg-[#02b352] text-white text-sm font-semibold transition shadow-sm"
             >
               <span className="text-lg leading-none">📗</span>
-              <span>네이버 카페</span>
+              <span>꾸준휘 쇼츠 수익화 카페</span>
             </a>
             <a
               href={YT_URL}
@@ -69,7 +69,7 @@ export default function Layout() {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#FF0000] hover:bg-[#dd0000] text-white text-sm font-semibold transition shadow-sm"
             >
               <span className="text-lg leading-none">▶️</span>
-              <span>유튜브 · 준휘야 쇼츠하자</span>
+              <span>쇼츠 수익화 공부는 여기</span>
             </a>
             <a
               href="https://www.instagram.com/p/DXd3QbwEz74/"
