@@ -55,6 +55,41 @@ export default function Home() {
         </p>
       </div>
 
+      <a
+        href="https://open.kakao.com/o/gH4HL25h"
+        target="_blank"
+        rel="noreferrer"
+        className="relative block group mb-8 sm:mb-10 rounded-3xl overflow-hidden"
+      >
+        <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 blur-lg opacity-60 group-hover:opacity-90 animate-pulse" />
+        <div className="relative rounded-3xl bg-gradient-to-br from-[#FEE500] via-[#FFD900] to-[#FEE500] p-5 sm:p-6 shadow-[0_12px_40px_rgba(254,229,0,0.5)] ring-2 ring-yellow-400 group-hover:scale-[1.01] transition-transform">
+          <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-red-500 text-white text-[10px] font-bold tracking-wider animate-bounce shadow-md">
+            🔥 HOT
+          </div>
+          <div className="flex items-center gap-4 sm:gap-5">
+            <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#3C1E1E] flex items-center justify-center text-3xl sm:text-4xl shadow-inner">
+              💬
+            </div>
+            <div className="flex-1 min-w-0 text-left">
+              <div className="text-[11px] sm:text-xs font-bold text-[#3C1E1E]/70 mb-0.5 tracking-wide">
+                👋 쇼츠 크리에이터라면 필수!
+              </div>
+              <div className="text-base sm:text-xl font-extrabold text-[#3C1E1E] leading-tight">
+                박준휘 쇼츠 커뮤니티 오픈채팅
+              </div>
+              <div className="text-[12px] sm:text-[13px] text-[#3C1E1E]/80 mt-1 leading-snug">
+                실시간 꿀팁 · 트렌드 공유 · 질문 답변 · 함께 성장하는 동료들
+              </div>
+            </div>
+            <div className="shrink-0 flex flex-col items-center gap-1">
+              <div className="px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-[#3C1E1E] text-[#FEE500] text-xs sm:text-sm font-bold whitespace-nowrap group-hover:bg-black transition shadow-md">
+                무료 입장 →
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
       <div className="sm:hidden mb-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-4">
         <div className="flex items-start gap-2.5">
           <span className="text-xl leading-none">💻</span>

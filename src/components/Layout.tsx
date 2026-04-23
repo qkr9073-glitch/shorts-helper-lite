@@ -32,6 +32,22 @@ export default function Layout() {
         <div className="relative z-10">
           <Outlet />
         </div>
+        <a
+          href="https://open.kakao.com/o/gH4HL25h"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="박준휘 쇼츠 커뮤니티 오픈채팅 입장"
+          className="group fixed bottom-5 right-5 z-40 flex items-center gap-2 pl-3 pr-4 py-3 rounded-full bg-[#FEE500] hover:bg-[#FFD900] text-[#3C1E1E] font-bold text-sm shadow-[0_10px_30px_rgba(254,229,0,0.6)] ring-2 ring-yellow-400/70 hover:-translate-y-0.5 transition"
+        >
+          <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-[#3C1E1E] text-[#FEE500] text-base">
+            💬
+            <span className="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-red-500 ring-2 ring-[#FEE500] animate-pulse" />
+          </span>
+          <span className="leading-tight">
+            <span className="block text-[10px] font-bold opacity-80">박준휘 쇼츠 커뮤니티</span>
+            <span className="block">오픈채팅 입장 →</span>
+          </span>
+        </a>
       </main>
 
       <footer className="mt-12 border-t border-borderc-base bg-white/60">
