@@ -72,7 +72,7 @@ export default function Layout() {
               <span>유튜브 · 준휘야 쇼츠하자</span>
             </a>
             <a
-              href="https://www.instagram.com/reel/DXd3QbwEz74/?igsh=MXZxMGs3cXl4MHpxMg=="
+              href="https://www.instagram.com/p/DXd3QbwEz74/"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 text-white text-sm font-semibold transition shadow-sm"
