@@ -78,7 +78,7 @@ export default function Layout() {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#8134af] hover:opacity-90 text-white text-sm font-semibold transition shadow-sm"
             >
               <span className="text-lg leading-none">💛</span>
-              <span>따뜻한 준휘 소개 영상</span>
+              <span>박준휘 소개 영상</span>
             </a>
           </div>
 
