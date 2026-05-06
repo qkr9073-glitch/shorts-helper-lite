@@ -6,6 +6,9 @@ import {
 
 env.allowLocalModels = false;
 env.useBrowserCache = true;
+if (typeof window !== "undefined") {
+  env.remoteHost = `${window.location.origin}/hf`;
+}
 
 export type WhisperModel = "tiny" | "base" | "small" | "medium";
 
